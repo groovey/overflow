@@ -11,6 +11,11 @@ trim_trailing_whitespace = true
 [*.md]
 trim_trailing_whitespace = false
 
+[*.vue]
+indent_size = 2
+indent_style = space
+trim_trailing_whitespace = true
+
 # CSS
 # https://google.github.io/styleguide/htmlcssguide.xml#General_Formatting_Rules
 # http://cssguidelin.es/#syntax-and-formatting
