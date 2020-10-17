@@ -1,1 +1,7 @@
-# cards
+## cards
+
+
+## NPX
+
+    $ npx vue -V
+    
