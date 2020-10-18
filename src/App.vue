@@ -2,7 +2,9 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <div>{{ description }}</div>
+
     <Nav />
+    <router-view />
     <User header="Listing of users"></User>
     <UserForm></UserForm>
   </div>
