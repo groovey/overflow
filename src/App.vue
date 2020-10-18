@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
+    <img alt="Vue logo" src="./assets/logo.png" width="100" />
     <div>{{ description }}</div>
     <Nav />
     <router-view />
@@ -17,7 +17,7 @@ export default {
   },
   data () {
     return {
-      description: 'The vue tailwind layout'
+      description: 'The vue tailwind app'
     }
   }
 }
