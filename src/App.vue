@@ -2,26 +2,23 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <div>{{ description }}</div>
-
     <Nav />
     <router-view />
-    <User header="Listing of users"></User>
-    <UserForm></UserForm>
   </div>
 </template>
 
 <script>
 import Nav from './components/Nav.vue'
-import User from './components/User.vue'
-import UserForm from './components/UserForm.vue'
 
 export default {
   name: 'App',
-  description: 'The opinionated vue js framework.',
   components: {
-    User,
-    Nav,
-    UserForm
+    Nav
+  },
+  data () {
+    return {
+      description: 'The vue tailwind layout'
+    }
   }
 }
 </script>
