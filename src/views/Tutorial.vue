@@ -1,11 +1,10 @@
 <template>
   <div>
     <div>The url parameter test/:id value = {{ id }}</div>
-    <div>Value contains html code = <span v-html="html"></span></div>
-    <div>The v bind image directive = <img v-bind:src="img" width="20" /></div>
+    <div>Tutorial description = {{ description }}</div>
 
     <User header="Listing of users"></User>
-    <Tutorial accountBalance="kim"></Tutorial>
+    <Tutorial title="This is a vue tutorial" :id="id" v-on:relay="processRelay"></Tutorial>
   </div>
 </template>
 
@@ -21,8 +20,15 @@ export default {
   data () {
     return {
       id: this.$route.params.id,
-      html: '<b><u>Contains html code</u></b>',
-      img: 'http://localhost:8080/img/logo.82b9c7a5.png'
+      description: 'Welcome to the tutorial page.'
+
+    }
+  },
+  methods: {
+    processRelay (description, fullDescription) {
+      console.log('description = ', description)
+      console.log('full description = ', fullDescription)
+      this.description = description
     }
   }
 
@@ -31,7 +37,8 @@ export default {
 
 <style scoped>
 div {
-  padding: 10px;
+  padding: 5px;
   background-color: azure;
+  margin-bottom: 5px;
 }
 </style>
