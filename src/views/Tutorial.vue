@@ -5,18 +5,18 @@
     <div>The v bind image directive = <img v-bind:src="img" width="20" /></div>
 
     <User header="Listing of users"></User>
-    <Test></Test>
+    <Tutorial></Tutorial>
   </div>
 </template>
 
 <script>
 import User from '@/components/User.vue'
-import Test from '@/components/Test.vue'
+import Tutorial from '@/components/Tutorial.vue'
 
 export default {
   components: {
     User,
-    Test
+    Tutorial
   },
   data () {
     return {

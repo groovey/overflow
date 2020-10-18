@@ -89,6 +89,20 @@
         </div>
       </div>
     </div>
+
+    <div>
+      <div class="container">
+        <h3>Dynamic select base on model data</h3>
+        <div class="left">
+          <select name="" id="" v-model="message.fruit">
+            <option v-for="fruit in fruits" :key="fruit" :value="fruit">{{ fruit }}</option>
+          </select>
+        </div>
+        <div class="right">
+          {{ message.fruit }}
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -100,8 +114,12 @@ export default {
         textarea: '',
         radio: '',
         checkbox: [],
-        select: ''
+        select: '',
+        fruit: ''
       },
+      fruits: [
+        'apple', 'orange', 'banana'
+      ],
       name: null,
       email: null,
       users: []
