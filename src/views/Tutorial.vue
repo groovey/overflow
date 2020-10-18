@@ -5,7 +5,7 @@
     <div>The v bind image directive = <img v-bind:src="img" width="20" /></div>
 
     <User header="Listing of users"></User>
-    <Tutorial></Tutorial>
+    <Tutorial accountBalance="kim"></Tutorial>
   </div>
 </template>
 
@@ -23,7 +23,6 @@ export default {
       id: this.$route.params.id,
       html: '<b><u>Contains html code</u></b>',
       img: 'http://localhost:8080/img/logo.82b9c7a5.png'
-
     }
   }
 

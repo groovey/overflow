@@ -5,13 +5,15 @@
         <h3>V-model for input</h3>
         <div class="left">
           <form @submit.prevent="add">
-            <input type="text" placeholder="name" name="name" v-model="name" /> <br />
+            <input type="text" placeholder="first name" name="firstName" v-model="firstName" /> <br />
+            <input type="text" placeholder="last name" name="lastName" v-model="lastName" /> <br />
             <input type="text" placeholder="email" name="email" v-model="email" /> <br />
             <input type="submit" value="submit" />
           </form>
         </div>
         <div class="right">
           <div>{{ users }}</div>
+          <div>Computed fullName : <input v-model="fullName" /></div>
         </div>
       </div>
     </div>
@@ -108,6 +110,7 @@
 
 <script>
 export default {
+
   data () {
     return {
       message: {
@@ -120,16 +123,31 @@ export default {
       fruits: [
         'apple', 'orange', 'banana'
       ],
-      name: null,
-      email: null,
+      firstName: '',
+      lastName: '',
+      email: '',
       users: []
     }
   },
   methods: {
     add () {
-      this.users.push({ name: this.name, email: this.email })
-      this.name = ''
+      this.users.push({ firstName: this.firstName, lastName: this.lastName, email: this.email })
+      this.firstName = ''
+      this.lastName = ''
       this.email = ''
+    }
+  },
+  computed: {
+
+    fullName: {
+      get () {
+        return this.firstName + ' ' + this.lastName
+      },
+      set (value) {
+        const array = value.split(' ')
+        this.firstName = array[0]
+        this.lastName = array[array.length - 1]
+      }
     }
   }
 }
