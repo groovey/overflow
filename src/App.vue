@@ -1,17 +1,25 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div>{{ description }}</div>
+    <Nav />
+    <User header="Listing of users"></User>
+    <UserForm></UserForm>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Nav from './components/Nav.vue'
+import User from './components/User.vue'
+import UserForm from './components/UserForm.vue'
 
 export default {
   name: 'App',
+  description: 'The opinionated vue js framework.',
   components: {
-    HelloWorld
+    User,
+    Nav,
+    UserForm
   }
 }
 </script>
