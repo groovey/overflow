@@ -1,21 +1,22 @@
 <template>
   <div>
-    <div>The url parameter test/:id value = {{ id }}</div>
-    <div>Tutorial description = {{ description }}</div>
+    <Nav></Nav>
 
-    <User header="Listing of users"></User>
-    <Tutorial title="This is a vue tutorial" :id="id" v-on:relay="processRelay"></Tutorial>
+    <!-- <User header="Listing of users"></User> -->
+    <!-- <Tutorial title="This is a vue tutorial" :id="id" v-on:relay="processRelay"></Tutorial> -->
   </div>
 </template>
 
 <script>
-import User from '@/components/User.vue'
-import Tutorial from '@/components/Tutorial.vue'
+// import User from '@/components/User.vue'
+// import Tutorial from '@/components/Tutorial.vue'
+import Nav from '@/components/tutorials/Nav.vue'
 
 export default {
   components: {
-    User,
-    Tutorial
+    Nav
+    // User
+    // Tutorial
   },
   data () {
     return {
@@ -36,9 +37,4 @@ export default {
 </script>
 
 <style scoped>
-div {
-  padding: 5px;
-  background-color: azure;
-  margin-bottom: 5px;
-}
 </style>
