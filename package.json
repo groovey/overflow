@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A vue card tailwind framework",
   "main": "main.js",
+  "bin": {
+    "groovey/cards": "bin/cards",
+    "cards": "bin/cards"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "vue-cli-service serve",
@@ -16,7 +20,8 @@
   "keywords": [
     "vue",
     "tailwind",
-    "framework"
+    "framework",
+    "cards"
   ],
   "author": "Harold Kim Cantil",
   "license": "MIT",
@@ -33,10 +38,15 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "eslint-plugin-vue": "^7.0.1"
+    "eslint-plugin-vue": "^7.0.1",
+    "tailwindcss": "^1.9.4"
   },
   "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^6.1.0",
     "core-js": "^3.6.5",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.3.3",
     "vue": "^3.0.1",
     "vue-router": "^4.0.0-beta.13"
   }
