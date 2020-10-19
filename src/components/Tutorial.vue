@@ -4,12 +4,7 @@
       <div>Props v-bind id value = {{ id }}</div>
       <div>Props title value as string = {{ title }}</div>
       <div>Props title value with html code = <span v-html="html"></span></div>
-      <div>The v bind image directive = <img v-bind:src="img" width="20" /></div>
-      <div v-bind:class="class_placeholder">The v bind class via placeholder</div>
-      <div v-bind:class="[class_one, class_two]">The v bind class via array placeholder</div>
-      <div v-bind:class="{ white_font: true, blue_background: true }">The v bind class via json object</div>
-      <div v-bind:class="better_placeholder">The v bind class via json object (A better way of doing it)</div>
-      <div :class="highlight">The v bind class via computed function</div>
+
       <div>
         <input v-on:click="send" type="button" value="Emit Data" />
       </div>
