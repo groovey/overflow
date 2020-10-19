@@ -1,10 +1,10 @@
 <template>
   <div>
-    <Nav></Nav>
+    <!-- V Directives -->
+    <div v-html="html"></div>
 
     <!-- V-bind -->
     <div>The v bind image directive = <img v-bind:src="image" width="50" /></div>
-    <div v-bind:class="highlight">v-bind:class via computed function</div>
     <div v-bind:class="error">v-bind:class via a data placeholder</div>
     <div v-bind:class="{ green: true, bg_orange: true }">v-bind:class via json object</div>
     <div v-bind:class="[color.white, bg.green]">v-bind:class via array</div>
@@ -20,11 +20,11 @@
 </template>
 
 <script>
-import Nav from '@/components/tutorials/Nav'
 
 export default {
   data () {
     return {
+      html: '<b><u>Data value that contains html code</u></b>',
       image: 'http://localhost:8080/img/logo.82b9c7a5.png',
       error: {
         white: true,
@@ -52,17 +52,6 @@ export default {
     hello (user) {
       alert(user.name + ' <' + user.email + '>')
     }
-  },
-  computed: {
-    highlight () {
-      return {
-        black: true,
-        bg_yellow: true
-      }
-    }
-  },
-  components: {
-    Nav
   }
 }
 </script>

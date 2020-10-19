@@ -1,10 +1,10 @@
-import Basic from '@/components/tutorials/Basic'
-import Scope from '@/components/tutorials/Scope'
-import Props from '@/components/tutorials/Props'
-import Params from '@/components/tutorials/Params'
-import Bind from '@/components/tutorials/Bind'
-import Emit from '@/components/tutorials/Emit'
-import Model from '@/components/tutorials/Model'
+import Basic from '@/views/tutorials/Basic'
+import Scope from '@/views/tutorials/Scope'
+import Props from '@/views/tutorials/Props'
+import Params from '@/views/tutorials/Params'
+import Emit from '@/views/tutorials/Emit'
+import Model from '@/views/tutorials/Model'
+import Computed from '@/views/tutorials/Computed'
 
 export default [
   {
@@ -13,34 +13,34 @@ export default [
     component: Basic
   },
   {
-    path: '/tutorials/Scope',
+    path: '/tutorials/scope',
     name: 'Scope',
     component: Scope
   },
   {
-    path: '/tutorials/Props',
+    path: '/tutorials/props',
     name: 'Props',
     component: Props
   },
   {
-    path: '/tutorials/Params',
+    path: '/tutorials/params/:id',
     name: 'Params',
     component: Params
   },
   {
-    path: '/tutorials/Bind',
-    name: 'Bind',
-    component: Bind
-  },
-  {
-    path: '/tutorials/Emit',
+    path: '/tutorials/emit',
     name: 'Emit',
     component: Emit
   },
   {
-    path: '/tutorials/Model',
+    path: '/tutorials/model',
     name: 'Model',
     component: Model
+  },
+  {
+    path: '/tutorials/computed',
+    name: 'Computed',
+    component: Computed
   }
 
 ]

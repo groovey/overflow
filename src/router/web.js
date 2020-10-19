@@ -1,7 +1,7 @@
 import Home from '@/views/Home.vue'
 import Contact from '@/views/Contact.vue'
 import About from '@/views/About.vue'
-import Tutorial from '@/views/Tutorial.vue'
+import Tutorials from '@/views/tutorials/Index.vue'
 
 export default [
   {
@@ -22,6 +22,6 @@ export default [
   {
     path: '/tutorials',
     name: 'Tutorials',
-    component: Tutorial
+    component: Tutorials
   }
 ]

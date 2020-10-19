@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style>
 .nav {
   background-color: antiquewhite;
   padding: 10px;
