@@ -1,0 +1,38 @@
+<template>
+  <div>
+    <Nav></Nav>
+    <Emit v-on:relay="process"></Emit>
+
+    <p>
+      This is the date emitted: <b>{{ data }}</b>
+    </p>
+  </div>
+</template>
+
+<script>
+import Nav from '@/components/tutorials/Nav'
+import Emit from '@/components/tutorials/Emit'
+
+export default {
+  data () {
+    return {
+      data: ''
+    }
+  },
+  methods: {
+    process (owner, message) {
+      const msg = owner + ' ' + message
+      console.log('GET DATA ', msg)
+      this.data = msg
+    }
+
+  },
+  components: {
+    Nav,
+    Emit
+  }
+}
+</script>
+
+<style>
+</style>
