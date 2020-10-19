@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Nav></Nav>
-    <Emit v-on:relay="process"></Emit>
+    <Nav />
+    <Emit v-on:relay="process" />
 
     <p>
       This is the date emitted: <b>{{ data }}</b>

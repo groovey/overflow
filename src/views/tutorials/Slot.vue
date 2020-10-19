@@ -1,11 +1,10 @@
 <template>
   <div>
-    <Nav></Nav>
+    <Nav />
     <Slot>
-      <template v-slot:header> Here might be a page title </template>
+      <template v-slot:header>{{ header }} </template>
       <template v-slot:footer>Copyright by Cards</template>
-
-      The main content is here
+      {{ content }}
     </Slot>
   </div>
 </template>
@@ -15,6 +14,16 @@ import Nav from '@/components/tutorials/Nav.vue'
 import Slot from '@/components/tutorials/Slot.vue'
 
 export default {
+  data () {
+    return {
+      content: 'the main content goes here.',
+      header: 'The header title'
+
+    }
+  },
+  methods: {
+
+  },
   components: {
     Nav,
     Slot

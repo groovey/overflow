@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Nav></Nav>
-    <Computed></Computed>
+    <Nav />
+    <Computed />
   </div>
 </template>
 

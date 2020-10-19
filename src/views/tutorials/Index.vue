@@ -1,8 +1,6 @@
 <template>
   <div>
-    <Nav></Nav>
-
-    <!-- <Tutorial title="This is a vue tutorial" :id="id" v-on:relay="processRelay"></Tutorial> -->
+    <Nav />
   </div>
 </template>
 
@@ -12,7 +10,6 @@ import Nav from '@/components/tutorials/Nav.vue'
 export default {
   components: {
     Nav
-
   },
   data () {
     return {
@@ -27,7 +24,6 @@ export default {
       this.description = description
     }
   }
-
 }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Nav></Nav>
-    <Props id="123" title="The props title"></Props>
+    <Nav />
+    <Props id="123" title="The props title" />
   </div>
 </template>
 
