@@ -42,6 +42,7 @@
     "tailwindcss": "^1.9.4"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "chalk": "^4.1.0",
     "commander": "^6.1.0",
     "core-js": "^3.6.5",

@@ -5,6 +5,7 @@ import Params from '@/views/tutorials/Params'
 import Emit from '@/views/tutorials/Emit'
 import Model from '@/views/tutorials/Model'
 import Computed from '@/views/tutorials/Computed'
+import Trans from '@/views/tutorials/Trans'
 
 export default [
   {
@@ -41,6 +42,10 @@ export default [
     path: '/tutorials/computed',
     name: 'Computed',
     component: Computed
+  },
+  {
+    path: '/tutorials/transition',
+    name: 'Trans',
+    component: Trans
   }
-
 ]
