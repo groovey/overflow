@@ -1,5 +1,5 @@
 import Basic from '@/views/tutorials/Basic'
-import Scope from '@/views/tutorials/Scope'
+import Slot from '@/views/tutorials/Slot'
 import Props from '@/views/tutorials/Props'
 import Params from '@/views/tutorials/Params'
 import Emit from '@/views/tutorials/Emit'
@@ -13,9 +13,9 @@ export default [
     component: Basic
   },
   {
-    path: '/tutorials/scope',
-    name: 'Scope',
-    component: Scope
+    path: '/tutorials/slot',
+    name: 'Slot',
+    component: Slot
   },
   {
     path: '/tutorials/props',
