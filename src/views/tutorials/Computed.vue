@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Nav from '@/components/tutorials/Nav'
-import Computed from '@/components/tutorials/Computed'
+import Nav from '@/components/tutorials/Nav.vue'
+import Computed from '@/components/tutorials/Computed.vue'
 
 export default {
   components: {

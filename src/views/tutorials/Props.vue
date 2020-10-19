@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Nav from '@/components/tutorials/Nav'
-import Props from '@/components/tutorials/Props'
+import Nav from '@/components/tutorials/Nav.vue'
+import Props from '@/components/tutorials/Props.vue'
 
 export default {
   components: {

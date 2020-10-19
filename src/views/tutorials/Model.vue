@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Nav from '@/components/tutorials/Nav'
-import Model from '@/components/tutorials/Model'
+import Nav from '@/components/tutorials/Nav.vue'
+import Model from '@/components/tutorials/Model.vue'
 
 export default {
   components: {

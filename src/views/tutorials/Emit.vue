@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import Nav from '@/components/tutorials/Nav'
-import Emit from '@/components/tutorials/Emit'
+import Nav from '@/components/tutorials/Nav.vue'
+import Emit from '@/components/tutorials/Emit.vue'
 
 export default {
   data () {

@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import Nav from '@/components/tutorials/Nav'
-import Slot from '@/components/tutorials/Slot'
+import Nav from '@/components/tutorials/Nav.vue'
+import Slot from '@/components/tutorials/Slot.vue'
 
 export default {
   components: {
