@@ -37,6 +37,7 @@
 
     <transition
       mode="out-in"
+      name="fade"
       @before-enter="beforeEnter"
       @enter="enter"
       @after-enter="afterEnter"
@@ -100,6 +101,8 @@ export default {
 </script>
 
 <style scoped>
+@import '~animate.css/animate.css';
+
 .fade-enter-from {
   opacity: 0;
 }
