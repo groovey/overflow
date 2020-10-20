@@ -6,6 +6,7 @@ import Emit from '@/views/tutorials/Emit'
 import Model from '@/views/tutorials/Model'
 import Computed from '@/views/tutorials/Computed'
 import Trans from '@/views/tutorials/Trans'
+import Ajax from '@/views/tutorials/Ajax'
 
 export default [
   {
@@ -47,5 +48,10 @@ export default [
     path: '/tutorials/transition',
     name: 'Trans',
     component: Trans
+  },
+  {
+    path: '/tutorials/ajax',
+    name: 'Ajax',
+    component: Ajax
   }
 ]

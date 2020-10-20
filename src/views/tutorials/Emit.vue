@@ -4,7 +4,7 @@
     <Emit v-on:relay="process" />
 
     <p>
-      This is the date emitted: <b>{{ data }}</b>
+      This is the data emitted: <b>{{ data }}</b>
     </p>
   </div>
 </template>
