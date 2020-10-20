@@ -1,27 +1,28 @@
 import Home from '@/views/Home.vue'
 import Contact from '@/views/Contact.vue'
 import About from '@/views/About.vue'
-import Tutorials from '@/views/tutorials/Index.vue'
 
 export default [
   {
     path: '/',
-    name: 'Home',
+    name: 'root',
+    redirect: {
+      name: 'home'
+    }
+  },
+  {
+    path: '/home',
+    name: 'home',
     component: Home
   },
   {
     path: '/contact',
-    name: 'Countact',
+    name: 'contact',
     component: Contact
   },
   {
     path: '/about',
-    name: 'About',
+    name: 'about',
     component: About
-  },
-  {
-    path: '/tutorials',
-    name: 'Tutorials',
-    component: Tutorials
   }
 ]
