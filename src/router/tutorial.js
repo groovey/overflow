@@ -11,47 +11,47 @@ import Ajax from '@/views/tutorials/Ajax'
 export default [
   {
     path: '/tutorials/Basic',
-    name: 'Basic',
+    name: 'tutorial-basic',
     component: Basic
   },
   {
     path: '/tutorials/slot',
-    name: 'Slot',
+    name: 'tutorial-slot',
     component: Slot
   },
   {
     path: '/tutorials/props',
-    name: 'Props',
+    name: 'tutorial-props',
     component: Props
   },
   {
     path: '/tutorials/params/:id',
-    name: 'Params',
+    name: 'tutorial-params',
     component: Params
   },
   {
     path: '/tutorials/emit',
-    name: 'Emit',
+    name: 'tutorial-emit',
     component: Emit
   },
   {
     path: '/tutorials/model',
-    name: 'Model',
+    name: 'tutorial-model',
     component: Model
   },
   {
     path: '/tutorials/computed',
-    name: 'Computed',
+    name: 'tutorial-computed',
     component: Computed
   },
   {
     path: '/tutorials/transition',
-    name: 'Trans',
+    name: 'tutorial-trans',
     component: Trans
   },
   {
     path: '/tutorials/ajax',
-    name: 'Ajax',
+    name: 'tutorial-ajax',
     component: Ajax
   }
 ]
