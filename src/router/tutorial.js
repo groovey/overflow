@@ -1,13 +1,14 @@
 import Tutorials from '@/views/Tutorials.vue'
-import Basic from '@/views/tutorials/Basic'
-import Slot from '@/views/tutorials/Slot'
-import Props from '@/views/tutorials/Props'
-import Params from '@/views/tutorials/Params'
-import Emit from '@/views/tutorials/Emit'
-import Model from '@/views/tutorials/Model'
-import Computed from '@/views/tutorials/Computed'
-import Trans from '@/views/tutorials/Trans'
-import Ajax from '@/views/tutorials/Ajax'
+import Basic from '@/views/tutorials/Basic.vue'
+import Slot from '@/views/tutorials/Slot.vue'
+import Props from '@/views/tutorials/Props.vue'
+import Params from '@/views/tutorials/Params.vue'
+import Emit from '@/views/tutorials/Emit.vue'
+import Model from '@/views/tutorials/Model.vue'
+import Computed from '@/views/tutorials/Computed.vue'
+import Trans from '@/views/tutorials/Trans.vue'
+import Ajax from '@/views/tutorials/Ajax.vue'
+import CompositionApi from '@/views/tutorials/CompositionApi.vue'
 
 export default [
   {
@@ -62,6 +63,11 @@ export default [
         path: 'ajax',
         name: 'tutorial-ajax',
         component: Ajax
+      },
+      {
+        path: 'composition-api',
+        name: 'tutorial-composition-api',
+        component: CompositionApi
       }
     ]
   }

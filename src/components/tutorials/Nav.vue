@@ -9,5 +9,6 @@
     <router-link :to="{ name: 'tutorial-computed' }">Computed</router-link>
     <router-link :to="{ name: 'tutorial-trans' }">Transition</router-link>
     <router-link :to="{ name: 'tutorial-ajax' }">Ajax</router-link>
+    <router-link :to="{ name: 'tutorial-composition-api' }">Composition API</router-link>
   </div>
 </template>
