@@ -34,13 +34,31 @@
 
     <hr />
     <div>
-      <button>Chat</button>
+      <input v-model="todo.task.value" placeholder="" />
+      {{ todo.task.value }}
+    </div>
+    <div>
+      <button @click="todo.add">Add todo</button>
+      <button @click="todo.remove">Remove todo</button>
+      <ul>
+        <li v-for="task in todo.todos.value" v-bind:key="task">{{ task }}</li>
+      </ul>
+    </div>
+
+    <hr />
+    <div>
+      <input v-model="chat.message.value" placeholder="" />
+    </div>
+    <div>
+      {{ chat.typing.value }}
+      <button @click="chat.add">Send</button>
     </div>
   </div>
 </template>
 
 <script>
 import { ref, computed, watch, reactive, onMounted } from 'vue'
+import { todo, message, typing, add } from '@/services/todo'
 import string from '@/helpers/string'
 
 export default {
@@ -80,7 +98,6 @@ export default {
     }
 
     // Export function from chat
-
     watch(selected, (newValue, oldValue) => {
       console.log('watcher old value = ', oldValue)
       console.log('watcher new value = ', newValue)
@@ -90,7 +107,25 @@ export default {
       console.log('mounted')
     })
 
-    return { data, fruits, selected, selectedFruit, getProps, pay, getMessage, getHelper }
+    console.log(todo)
+
+    return {
+      data,
+      fruits,
+      selected,
+      selectedFruit,
+      getProps,
+      pay,
+      getMessage,
+      getHelper,
+      todo,
+      chat: {
+        message,
+        typing,
+        add
+      }
+
+    }
   }
 
 }
