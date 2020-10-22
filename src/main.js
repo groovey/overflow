@@ -2,6 +2,9 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import i18nPlugin from './plugins/i18n.js'
+// import '@/assets/tailwind.css'
+// import '~/assets/tailwind.css'
+// import '@/styles/tailwind.css'
 
 const app = createApp(App)
 const i18nStrings = {

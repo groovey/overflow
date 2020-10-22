@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
+  <div id="app" class="bg-blue-500">
     <img alt="Vue logo" src="./assets/logo.png" width="50" />
-    <div>{{ description }}</div>
+    <div class="bg-green-400">{{ description }}</div>
     <Nav />
     <router-view />
   </div>
@@ -24,6 +24,11 @@ export default {
 </script>
 
 <style>
+/* @import 'http://localhost:8080/css/tailwind.css'; */
+</style>
+
+<style >
+/* @import '@/styles/tailwind.css'; */
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

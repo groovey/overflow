@@ -12,7 +12,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build:tailwind": "tailwindcss build resources/css/tailwind.css -o public/css/tailwind.css",
+    "build:tailwind": "tailwindcss build src/styles/tailwind.css -o public/css/tailwind.css",
     "build:postcss": "postcss resources/css/tailwind.css -o public/css/postcss.css"
   },
   "repository": {
@@ -28,22 +28,21 @@
   "author": "Harold Kim Cantil",
   "license": "MIT",
   "devDependencies": {
-    "@vue/cli": "^4.5.7",
-    "@vue/cli-plugin-babel": "^4.5.7",
-    "@vue/cli-plugin-eslint": "^4.5.7",
-    "@vue/cli-service": "^4.5.7",
-    "@vue/compiler-sfc": "^3.0.1",
-    "autoprefixer": "^10.0.1",
+    "@vue/cli": "^4.5.8",
+    "@vue/cli-plugin-babel": "^4.5.8",
+    "@vue/cli-plugin-eslint": "^4.5.8",
+    "@vue/cli-service": "^4.5.8",
+    "@vue/compiler-sfc": "^3.0.2",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.11.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "eslint-plugin-vue": "^7.0.1",
+    "eslint-plugin-standard": "^4.0.2",
+    "eslint-plugin-vue": "^7.1.0",
     "standard": "^15.0.0",
-    "tailwindcss": "^1.9.4"
+    "tailwindcss": "^1.9.5"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
@@ -53,7 +52,7 @@
     "core-js": "^3.6.5",
     "download-git-repo": "^3.0.2",
     "inquirer": "^7.3.3",
-    "vue": "^3.0.1",
+    "vue": "^3.0.2",
     "vue-router": "^4.0.0-beta.13"
   }
 }
