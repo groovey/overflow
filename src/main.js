@@ -9,7 +9,6 @@ const i18nStrings = {
     hi: 'Hallo!'
   }
 }
-app.provide('i18n', i18nStrings)
 
 app.use(i18nPlugin, i18nStrings)
 app.use(router)
