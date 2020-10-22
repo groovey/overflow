@@ -1,6 +1,6 @@
-import Home from '@/views/Home.vue'
-import Contact from '@/views/Contact.vue'
-import About from '@/views/About.vue'
+import Home from '@/pages/Home.vue'
+import Contact from '@/pages/Contact.vue'
+import About from '@/pages/About.vue'
 
 export default [
   {
