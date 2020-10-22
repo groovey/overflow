@@ -17,17 +17,19 @@
     <div>
       <button @click="pay">Add to Basket</button>
     </div>
+
     <hr />
     <div>
-      <input v-model="data.todo" placeholder="type and see the data.todo" />
+      <input v-model="data.message" placeholder="What is your message?" />
     </div>
-    <div>Reactive todo value: {{ data.todo }}</div>
+    <div>Reactive message value: {{ data.message }}</div>
     <div>
-      <button @click="getTodo">getTodo reactive value</button>
+      <button @click="getMessage">getMessage reactive value</button>
     </div>
+
     <hr />
     <div>
-      <button @click="getImportedFunction">getImportedFunction value</button>
+      <button @click="getTodo">getTodo value</button>
     </div>
   </div>
 </template>
@@ -43,7 +45,7 @@ export default {
     const selected = ref('')
 
     const data = reactive({
-      todo: ''
+      message: ''
     })
 
     // Computed cannot be used in @click
@@ -63,11 +65,11 @@ export default {
       context.emit('relay', 'process payment')
     }
 
-    function getTodo () {
-      alert(data.todo)
+    function getMessage () {
+      alert(data.message)
     }
 
-    function getImportedFunction () {
+    function getTodo () {
       todo.set('go to work')
       todo.get()
     }
@@ -81,7 +83,7 @@ export default {
       console.log('mounted')
     })
 
-    return { data, fruits, selected, selectedFruit, getProps, pay, getTodo, getImportedFunction }
+    return { data, fruits, selected, selectedFruit, getProps, pay, getMessage, getTodo }
   }
 
 }
