@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import { ref, computed, watch, reactive } from 'vue'
+import { ref, computed, watch, reactive, onMounted } from 'vue'
 import todo from '@/helpers/todo'
 
 export default {
@@ -75,6 +75,10 @@ export default {
     watch(selected, (newValue, oldValue) => {
       console.log('watcher old value = ', oldValue)
       console.log('watcher new value = ', newValue)
+    })
+
+    onMounted(() => {
+      console.log('mounted')
     })
 
     return { data, fruits, selected, selectedFruit, getProps, pay, getTodo, getImportedFunction }
