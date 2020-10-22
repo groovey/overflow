@@ -29,14 +29,19 @@
 
     <hr />
     <div>
-      <button @click="getTodo">getTodo value</button>
+      <button @click="getHelper">getHelper value</button>
+    </div>
+
+    <hr />
+    <div>
+      <button>Chat</button>
     </div>
   </div>
 </template>
 
 <script>
 import { ref, computed, watch, reactive, onMounted } from 'vue'
-import todo from '@/helpers/todo'
+import string from '@/helpers/string'
 
 export default {
   props: ['owner'],
@@ -69,10 +74,12 @@ export default {
       alert(data.message)
     }
 
-    function getTodo () {
-      todo.set('go to work')
-      todo.get()
+    function getHelper () {
+      string.set('go to work')
+      string.get()
     }
+
+    // Export function from chat
 
     watch(selected, (newValue, oldValue) => {
       console.log('watcher old value = ', oldValue)
@@ -83,7 +90,7 @@ export default {
       console.log('mounted')
     })
 
-    return { data, fruits, selected, selectedFruit, getProps, pay, getMessage, getTodo }
+    return { data, fruits, selected, selectedFruit, getProps, pay, getMessage, getHelper }
   }
 
 }
