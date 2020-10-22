@@ -1,9 +1,4 @@
-### Npx
-
-    $ npx vue -V    
-    $ npx eslint ./src
-
-### Compiles and hot-reloads for development
+### Start
 
     $ npm run serve
 
