@@ -1,11 +1,11 @@
 module.exports = {
-  // purge: {
-  //   enabled: true,
-  //   content: [
-  //     './**/*.js',
-  //     './public/**/*.html'
-  //   ]
-  // },
+  purge: {
+    enabled: false,
+    content: [
+      './**/*.js',
+      './public/**/*.html'
+    ]
+  },
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,

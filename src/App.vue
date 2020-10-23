@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-blue-500">
+  <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" width="50" />
     <div class="bg-green-400">{{ description }}</div>
     <Nav />

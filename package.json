@@ -2,31 +2,25 @@
   "name": "cards",
   "version": "1.0.0",
   "description": "A vue card tailwind framework",
-  "main": "main.js",
-  "bin": {
-    "groovey/cards": "bin/cards",
-    "cards": "bin/cards"
-  },
+  "author": "Harold Kim Cantil",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build:tailwind": "tailwindcss build src/styles/tailwind.css -o public/css/tailwind.css",
-    "build:postcss": "postcss resources/css/tailwind.css -o public/css/postcss.css"
+    "build:tailwind": "tailwindcss build src/assets/css/tailwind.css -o public/css/tailwind.css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:groovey/cards.git"
+  "main": "main.js",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "axios": "^0.20.0",
+    "chalk": "^4.1.0",
+    "commander": "^6.1.0",
+    "core-js": "^3.6.5",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.3.3",
+    "vue": "^3.0.2",
+    "vue-router": "^4.0.0-beta.13"
   },
-  "keywords": [
-    "vue",
-    "tailwind",
-    "framework",
-    "cards"
-  ],
-  "author": "Harold Kim Cantil",
-  "license": "MIT",
   "devDependencies": {
     "@vue/cli": "^4.5.8",
     "@vue/cli-plugin-babel": "^4.5.8",
@@ -42,22 +36,22 @@
     "eslint-plugin-standard": "^4.0.2",
     "eslint-plugin-vue": "^7.1.0",
     "standard": "^15.0.0",
-    "tailwindcss": "^1.9.5"
+    "tailwindcss": "^1.9.5",
+    "vue-cli-plugin-tailwind": "~1.5.0"
   },
-  "dependencies": {
-    "animate.css": "^4.1.1",
-    "axios": "^0.20.0",
-    "chalk": "^4.1.0",
-    "commander": "^6.1.0",
-    "core-js": "^3.6.5",
-    "download-git-repo": "^3.0.2",
-    "inquirer": "^7.3.3",
-    "vue": "^3.0.2",
-    "vue-router": "^4.0.0-beta.13"
+  "bin": {
+    "groovey/cards": "bin/cards",
+    "cards": "bin/cards"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+  "keywords": [
+    "vue",
+    "tailwind",
+    "framework",
+    "cards"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:groovey/cards.git"
+  }
 }
