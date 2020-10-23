@@ -1,6 +1,7 @@
 import Home from '@/pages/Home.vue'
 import Contact from '@/pages/Contact.vue'
 import About from '@/pages/About.vue'
+import Test from '@/pages/Test.vue'
 
 export default [
   {
@@ -9,6 +10,11 @@ export default [
     redirect: {
       name: 'home'
     }
+  },
+  {
+    path: '/test',
+    name: 'test',
+    component: Test
   },
   {
     path: '/home',

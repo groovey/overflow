@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" width="50" />
-    <div class="bg-green-400">{{ description }}</div>
     <Nav />
     <router-view />
   </div>
@@ -17,24 +15,10 @@ export default {
   },
   data () {
     return {
-      description: 'The vue tailwind app'
     }
   }
 }
 </script>
 
-<style>
-/* @import 'http://localhost:8080/css/tailwind.css'; */
-</style>
-
 <style >
-/* @import '@/styles/tailwind.css'; */
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
