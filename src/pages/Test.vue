@@ -1,12 +1,12 @@
 <template>
   <div>
     <div class="bg-green-100">Welcome to testing</div>
-    <x-button @click="test" large>Sample</x-button>
+    <x-button @click.prevent="test" color="primary" small>Sample</x-button>
   </div>
 </template>
 
 <script>
-import XButton from '@/components/XButton.vue'
+import XButton from '@/components/Button.vue'
 export default {
   components: {
     XButton
@@ -16,6 +16,7 @@ export default {
   },
   methods: {
     test () {
+      console.log('test')
       alert('test')
     }
   }

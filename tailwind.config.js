@@ -20,7 +20,7 @@ module.exports = {
           dark: '#2b5a92'
         },
         secondary: {
-          default: '#6b7280',
+          default: '#9fa6b2',
           dark: '#6b7280'
         },
         success: {
@@ -29,7 +29,7 @@ module.exports = {
         },
         danger: {
           default: '#f05252',
-          dark: '#f05252'
+          dark: '#e02424'
         },
         warning: {
           default: '#f7c46c',
@@ -183,6 +183,8 @@ module.exports = {
 
     }
   },
-  variants: {},
+  variants: {
+    opacity: ['responsive', 'hover', 'focus', 'disabled']
+  },
   plugins: []
 }
