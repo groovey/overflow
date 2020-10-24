@@ -1,5 +1,5 @@
 <template>
-  <button :class="render" :disabled="renderDisabled">
+  <button :class="render" :disabled="isDisabled">
     <slot></slot>
   </button>
 </template>
@@ -16,6 +16,7 @@ export default {
     large: Boolean,
     xlarge: Boolean,
     disabled: Boolean,
+    block: Boolean,
     custom: String
   },
 
@@ -47,6 +48,7 @@ export default {
       medium: 'px-2 py-1 text-base',
       large: 'px-4 py-2 text-lg',
       xlarge: 'px-4 py-2 text-xl',
+      block: 'block w-full',
 
       disabled: 'disabled:opacity-75',
       custom: props.custom
@@ -81,6 +83,8 @@ export default {
           break
       }
 
+      if (props.block) { ui.push(tw.block) }
+
       if (props.xsmall) { ui.push(tw.xsmall) }
       if (props.small) { ui.push(tw.small) }
       if (props.medium) { ui.push(tw.medium) }
@@ -90,13 +94,13 @@ export default {
       return ui.join(' ')
     })
 
-    const renderDisabled = computed(() => {
+    const isDisabled = computed(() => {
       if (props.disabled === true) {
         return tw.disabled
       }
     })
 
-    return { render, renderDisabled }
+    return { render, isDisabled }
   }
 
 }
