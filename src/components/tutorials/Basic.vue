@@ -25,7 +25,7 @@ export default {
   data () {
     return {
       html: '<b><u>Data value that contains html code</u></b>',
-      image: 'http://localhost:8080/img/logo.82b9c7a5.png',
+      image: 'https://via.placeholder.com/200.png/09f/fff',
       error: {
         white: true,
         bg_red: true
