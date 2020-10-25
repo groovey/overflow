@@ -40,6 +40,7 @@
     <!-- Input -->
     <div class="w-64">
       <x-input placeholder="Please input your name"></x-input>
+      <x-input type="password" placeholder="Password?"></x-input>
       <x-input disabled placeholder="disabled input"></x-input>
     </div>
 
@@ -65,6 +66,11 @@
         </template>
       </x-modal>
     </div>
+
+    <!-- Label -->
+    <div>
+      <x-pill color="warning">inactive</x-pill>
+    </div>
   </div>
 </template>
 
@@ -79,6 +85,7 @@ import XHeader from '@/components/Header.vue'
 import XInput from '@/components/Input.vue'
 import XLabel from '@/components/Label.vue'
 import XModal from '@/components/Modal.vue'
+import XPill from '@/components/Pill.vue'
 
 export default {
   components: {
@@ -91,7 +98,8 @@ export default {
     XHeader,
     XInput,
     XLabel,
-    XModal
+    XModal,
+    XPill
   },
   data () {
     return {}
@@ -107,6 +115,9 @@ export default {
 
 <style scoped>
 div {
+  margin-bottom: 10px;
+}
+input {
   margin-bottom: 10px;
 }
 </style>

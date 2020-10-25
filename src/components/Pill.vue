@@ -1,7 +1,7 @@
 <template>
-  <button :class="render" :disabled="isDisabled">
+  <span :class="render">
     <slot></slot>
-  </button>
+  </span>
 </template>
 
 <script>
@@ -13,32 +13,31 @@ export default {
     outline: Boolean,
     size: String,
     disabled: Boolean,
-    block: Boolean,
     custom: String
   },
 
   setup (props, content) {
     const tw = {
-      base: 'inline-block rounded font-semibold transition duration-300 ease-in-out cursor-pointer focus:outline-none focus:shadow-outline',
+      base: 'inline-block rounded-full border text-xs lowercase font-semibold',
       primary: {
-        solid: 'bg-primary border-primary border text-white hover:bg-primary-dark',
-        outline: 'text-primary border-primary border hover:bg-primary-dark hover:text-white'
+        solid: 'bg-primary border-primary border text-white',
+        outline: 'text-primary border-primary'
       },
       secondary: {
-        solid: 'bg-secondary border-secondary border text-white hover:bg-secondary-dark',
-        outline: 'text-secondary border-secondary border hover:bg-secondary-dark hover:text-white'
+        solid: 'bg-secondary border-secondary border text-white',
+        outline: 'text-secondary border-secondary'
       },
       success: {
-        solid: 'bg-success border-success border text-white hover:bg-success-dark',
-        outline: 'text-success border-success border hover:bg-success-dark hover:text-white'
+        solid: 'bg-success border-success border text-white',
+        outline: 'text-success border-success'
       },
       danger: {
-        solid: 'bg-danger border-danger border text-white hover:bg-danger-dark',
-        outline: 'text-danger border-danger border hover:bg-danger-dark hover:text-white'
+        solid: 'bg-danger border-danger border text-white',
+        outline: 'text-danger border-danger'
       },
       warning: {
-        solid: 'bg-warning border-warning border text-white hover:bg-warning-dark',
-        outline: 'text-warning border-warning border hover:bg-warning-dark hover:text-white'
+        solid: 'bg-warning border-warning border text-white',
+        outline: 'text-warning border-warning'
       },
       xsmall: 'px-2 py-1 text-xs',
       small: 'px-2 py-1 text-sm',
@@ -83,7 +82,7 @@ export default {
       if (props.block) { ui.push(tw.block) }
 
       if (props.size === undefined) {
-        ui.push(tw.medium)
+        ui.push(tw.small)
       } else {
         ui.push(tw[props.size])
       }
