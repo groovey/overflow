@@ -71,10 +71,28 @@
     <div>
       <x-pill color="warning">inactive</x-pill>
     </div>
+
+    <!-- Select -->
+    <div>
+      <x-select>
+        <option value="" v-for="(fruit, index) in fruits" :key="index">{{ fruit }}</option>
+      </x-select>
+    </div>
+
+    <!-- Stickies -->
+    <div>
+      <x-stickies color="warning">active</x-stickies>
+    </div>
+
+    <!-- Textarea -->
+    <div>
+      <x-textarea value="This is a text area"></x-textarea>
+    </div>
   </div>
 </template>
 
 <script>
+import { ref } from 'vue'
 import XButton from '@/components/Button.vue'
 import XBullet from '@/components/Bullet.vue'
 import XAlert from '@/components/Alert.vue'
@@ -86,6 +104,9 @@ import XInput from '@/components/Input.vue'
 import XLabel from '@/components/Label.vue'
 import XModal from '@/components/Modal.vue'
 import XPill from '@/components/Pill.vue'
+import XSelect from '@/components/Select.vue'
+import XStickies from '@/components/Stickies.vue'
+import XTextarea from '@/components/Textarea.vue'
 
 export default {
   components: {
@@ -99,16 +120,21 @@ export default {
     XInput,
     XLabel,
     XModal,
-    XPill
+    XPill,
+    XSelect,
+    XStickies,
+    XTextarea
   },
-  data () {
-    return {}
-  },
-  methods: {
-    test () {
+
+  setup (props) {
+    const fruits = ref(['apple', 'banana', 'orange'])
+
+    function test () {
       console.log('test')
       alert('test')
     }
+
+    return { fruits, test }
   }
 }
 </script>
