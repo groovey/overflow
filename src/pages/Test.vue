@@ -21,6 +21,9 @@
       <template v-slot:header>CARD HEADER</template>
       1234
     </x-card>
+
+    <!-- Checkbox -->
+    <x-checkbox checked="checked"></x-checkbox>
   </div>
 </template>
 
@@ -29,12 +32,15 @@ import XButton from '@/components/Button.vue'
 import XBullet from '@/components/Bullet.vue'
 import XAlert from '@/components/Alert.vue'
 import XCard from '@/components/Card.vue'
+import XCheckbox from '@/components/Checkbox.vue'
+
 export default {
   components: {
     XButton,
     XBullet,
     XAlert,
-    XCard
+    XCard,
+    XCheckbox
   },
   data () {
     return {}
