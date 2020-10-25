@@ -4,7 +4,7 @@
 
     <!-- Button -->
     <div class="w-64 bg-green-300">
-      <x-button @click.prevent="test" color="primary" small>Sample</x-button>
+      <x-button @click.prevent="test" color="primary" small block>Sample</x-button>
     </div>
 
     <!-- Bullet -->
@@ -36,6 +36,35 @@
     <x-header type="1">This is a H1 tag</x-header>
     <x-header type="2">This is a H2 tag</x-header>
     <x-header type="3">This is a H3 tag</x-header>
+
+    <!-- Input -->
+    <div class="w-64">
+      <x-input placeholder="Please input your name"></x-input>
+      <x-input disabled placeholder="disabled input"></x-input>
+    </div>
+
+    <!-- Label -->
+    <div>
+      <x-label>This is a label</x-label>
+    </div>
+
+    <!-- Modal -->
+    <div>
+      <x-modal>
+        <template v-slot:header>Confirm</template>
+
+        <template v-slot:body>Are you sure you want to delete?</template>
+
+        <template v-slot="props">
+          <x-button color="secondary" @click="props.actions('hide')">Cancel</x-button>
+          <x-button color="primary" class="ml-1">Confirm</x-button>
+        </template>
+
+        <template v-slot:trigger>
+          <x-button>Trigger Modal 1</x-button>
+        </template>
+      </x-modal>
+    </div>
   </div>
 </template>
 
@@ -47,6 +76,9 @@ import XCard from '@/components/Card.vue'
 import XCheckbox from '@/components/Checkbox.vue'
 import XFile from '@/components/File.vue'
 import XHeader from '@/components/Header.vue'
+import XInput from '@/components/Input.vue'
+import XLabel from '@/components/Label.vue'
+import XModal from '@/components/Modal.vue'
 
 export default {
   components: {
@@ -56,7 +88,10 @@ export default {
     XCard,
     XCheckbox,
     XFile,
-    XHeader
+    XHeader,
+    XInput,
+    XLabel,
+    XModal
   },
   data () {
     return {}

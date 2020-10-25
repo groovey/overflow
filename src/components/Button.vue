@@ -11,10 +11,7 @@ export default {
   props: {
     color: String,
     outline: Boolean,
-    small: Boolean,
-    medium: Boolean,
-    large: Boolean,
-    xlarge: Boolean,
+    size: String,
     disabled: Boolean,
     block: Boolean,
     custom: String
@@ -84,12 +81,12 @@ export default {
       }
 
       if (props.block) { ui.push(tw.block) }
-
-      if (props.xsmall) { ui.push(tw.xsmall) }
-      if (props.small) { ui.push(tw.small) }
-      if (props.medium) { ui.push(tw.medium) }
-      if (props.large) { ui.push(tw.large) }
-      if (props.xlarge) { ui.push(tw.xlarge) }
+      console.log(props.size)
+      if (props.size === undefined) {
+        ui.push(tw.medium)
+      } else {
+        ui.push(tw[props.size])
+      }
 
       return ui.join(' ')
     })
