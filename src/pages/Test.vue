@@ -23,7 +23,19 @@
     </x-card>
 
     <!-- Checkbox -->
-    <x-checkbox checked="checked"></x-checkbox>
+    <div>
+      <x-checkbox checked="checked"></x-checkbox>
+    </div>
+
+    <!-- File -->
+    <div>
+      <x-file></x-file>
+    </div>
+
+    <!-- Header -->
+    <x-header type="1">This is a H1 tag</x-header>
+    <x-header type="2">This is a H2 tag</x-header>
+    <x-header type="3">This is a H3 tag</x-header>
   </div>
 </template>
 
@@ -33,6 +45,8 @@ import XBullet from '@/components/Bullet.vue'
 import XAlert from '@/components/Alert.vue'
 import XCard from '@/components/Card.vue'
 import XCheckbox from '@/components/Checkbox.vue'
+import XFile from '@/components/File.vue'
+import XHeader from '@/components/Header.vue'
 
 export default {
   components: {
@@ -40,7 +54,9 @@ export default {
     XBullet,
     XAlert,
     XCard,
-    XCheckbox
+    XCheckbox,
+    XFile,
+    XHeader
   },
   data () {
     return {}
