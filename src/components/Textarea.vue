@@ -10,7 +10,7 @@ export default {
 
   setup (props) {
     const tw = {
-      base: 'border px-3 py-2 w-full h-20 rounded-sm focus:outline-none'
+      base: 'border px-3 py-2 w-full h-20 rounded focus:outline-none'
     }
 
     const render = computed(() => {

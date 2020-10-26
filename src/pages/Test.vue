@@ -24,7 +24,21 @@
 
     <!-- Checkbox -->
     <div>
-      <x-checkbox checked="checked"></x-checkbox>
+      <!-- <x-checkbox checked="checked" name="apple" id="apple"></x-checkbox> -->
+      <x-input type="checkbox" checked="checked" name="apple" id="apple"></x-input>
+      <x-label for="apple">This is a label</x-label>
+    </div>
+
+    <!-- Radio -->
+    <div>
+      <div>
+        <x-input type="radio" name="fruits" id="fruit_apple"></x-input>
+        <x-label for="fruit_apple">Apple</x-label>
+      </div>
+      <div>
+        <x-input type="radio" name="fruits" id="fruit_orange"></x-input>
+        <x-label for="fruit_orange">Orange</x-label>
+      </div>
     </div>
 
     <!-- File -->
@@ -97,7 +111,6 @@ import XButton from '@/components/Button.vue'
 import XBullet from '@/components/Bullet.vue'
 import XAlert from '@/components/Alert.vue'
 import XCard from '@/components/Card.vue'
-import XCheckbox from '@/components/Checkbox.vue'
 import XFile from '@/components/File.vue'
 import XHeader from '@/components/Header.vue'
 import XInput from '@/components/Input.vue'
@@ -114,7 +127,6 @@ export default {
     XBullet,
     XAlert,
     XCard,
-    XCheckbox,
     XFile,
     XHeader,
     XInput,

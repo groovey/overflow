@@ -12,7 +12,7 @@ export default {
 
   setup (props, content) {
     const tw = {
-      base: 'form-select pb-3 border-gray-300 text-sm block appearance-none w-full bg-white border rounded-sm leading-tight focus:outline-none'
+      base: 'form-select pb-3 border-gray-300 text-sm block appearance-none w-full bg-white border rounded leading-tight focus:outline-none'
     }
 
     const render = computed(() => {
