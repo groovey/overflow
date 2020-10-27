@@ -1,12 +1,14 @@
 <template>
   <div id="app">
     <Nav />
-    <router-view />
+    <div class="p-5 bg-gray-50">
+      <router-view />
+    </div>
   </div>
 </template>
 
 <script>
-import Nav from './components/Nav.vue'
+import Nav from '@/components/Nav.vue'
 
 export default {
   name: 'App',
@@ -20,5 +22,5 @@ export default {
 }
 </script>
 
-<style >
+<style scoped>
 </style>

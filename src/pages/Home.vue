@@ -1,20 +1,17 @@
 <template>
-  <div>
-    <x-bar></x-bar>
-    <div>Test</div>
-  </div>
+  <x-card>Test</x-card>
 </template>
 
 <script>
+import XCard from '@/components/Card.vue'
 
 export default {
   components: {
+    XCard
+  },
+  setup () {
 
-  },
-  data () {
-    return {}
-  },
-  methods: {}
+  }
 }
 </script>
 

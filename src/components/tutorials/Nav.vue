@@ -12,3 +12,21 @@
     <router-link :to="{ name: 'tutorial-composition-api' }">Composition API</router-link>
   </div>
 </template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style scoped>
+.nav {
+  margin-bottom: 20px;
+}
+a {
+  padding: 10px;
+}
+a:hover {
+  background-color: antiquewhite;
+}
+</style>

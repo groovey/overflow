@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white rounded-sm shadow">
+  <div class="bg-white rounded shadow">
     <span v-if="hasHeader" :class="renderHeader">
       <slot name="header"></slot>
     </span>

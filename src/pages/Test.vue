@@ -1,7 +1,5 @@
 <template>
-  <div class="p-4">
-    <div class="bg-green-100">Welcome to testing</div>
-
+  <div>
     <!-- Button -->
     <div class="w-64 bg-green-300">
       <x-button @click.prevent="test" color="primary" small block>Sample</x-button>
@@ -102,6 +100,14 @@
     <div>
       <x-textarea value="This is a text area"></x-textarea>
     </div>
+
+    <!-- Avatar -->
+    <div>
+      <x-avatar text="HK" class="mr-2"></x-avatar>
+      <x-avatar
+        image="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      ></x-avatar>
+    </div>
   </div>
 </template>
 
@@ -120,6 +126,7 @@ import XPill from '@/components/Pill.vue'
 import XSelect from '@/components/Select.vue'
 import XStickies from '@/components/Stickies.vue'
 import XTextarea from '@/components/Textarea.vue'
+import XAvatar from '@/components/Avatar.vue'
 
 export default {
   components: {
@@ -135,14 +142,15 @@ export default {
     XPill,
     XSelect,
     XStickies,
-    XTextarea
+    XTextarea,
+    XAvatar
   },
 
   setup (props) {
     const fruits = ref(['apple', 'banana', 'orange'])
 
     function test () {
-      console.log('test')
+      // console.log('test')
       alert('test')
     }
 
