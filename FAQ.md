@@ -1,4 +1,4 @@
-#### Q. What are vscode extension setup?
+#### Q. What are the vscode extension used and how to setup?
 
 
 - Install prettier
