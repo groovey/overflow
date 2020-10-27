@@ -18,7 +18,7 @@ export default {
   setup (props, content) {
     const tw = {
       text: 'inline-block align-middle h-10 w-10 pt-2 rounded-full text-white bg-primary shadow-solid text-center',
-      image: 'inline-block h-10 w-10 rounded-full text-white shadow-solid'
+      image: 'inline-block h-10 w-10 rounded-full text-white shadow-solid object-cover object-center'
     }
 
     function isType (type) {
