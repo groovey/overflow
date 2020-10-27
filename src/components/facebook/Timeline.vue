@@ -7,7 +7,7 @@
 
     <x-card>
       <!-- Post header section -->
-      <x-post-header author="Harold Kim" origin="12 Hrs Faceook for Iphone"></x-post-header>
+      <x-post-header author="Harold Kim" origin="12 Hrs Facebook for Iphone"></x-post-header>
 
       <!-- Status message section -->
       <x-post-message text="Mamba mentality. #ginamos #idol"></x-post-message>
