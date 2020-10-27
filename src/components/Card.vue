@@ -1,10 +1,10 @@
 <template>
-  <div class="bg-white rounded shadow">
+  <div class="bg-white rounded-lg shadow">
     <span v-if="hasHeader" :class="renderHeader">
       <slot name="header"></slot>
     </span>
 
-    <div class="px-4 pb-4 pt-3">
+    <div class="">
       <slot></slot>
     </div>
   </div>
