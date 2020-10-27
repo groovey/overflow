@@ -70,7 +70,7 @@
           <div class="flex flex-col">
             <div class="flex flex-col bg-gray-100 ml-2 px-4 pt-1 pb-2 rounded-full">
               <div class="text-sm font-bold">Michael Jordan</div>
-              <div>I can do this too. Did you copy it from me?</div>
+              <div>Bro, Whad up? this is the goat.</div>
             </div>
             <div class="ml-6 text-xs font-semibold">Like &nbsp; Reply</div>
           </div>
