@@ -11,3 +11,9 @@
 ### Lints and fixes files
 
     $ npm run lint
+
+### Sample output on what you can do with the framework
+
+<p align="left">
+    <img src="https://raw.githubusercontent.com/groovey/cards/main/sample.png?token=ACJNLSSMV4UNSGRIJAKFKE27TE3CG" width="300">
+</p>
