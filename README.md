@@ -29,3 +29,7 @@ Cards is responsive framework written with Vue and Tailwindcss to suite your Fro
 <p align="left">
     <img src="https://github.com/groovey/cards/blob/main/sample.png" width="300">
 </p>
+ 
+### License
+
+The Espresso.js framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
