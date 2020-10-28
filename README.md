@@ -1,5 +1,17 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+
+### About Cards
+
+Cards is responsive framework written with Vue and Tailwindcss to suite your Frontend needs. Cards js was written to take out the pain of development on websites. 
+
+- Build in routing engine.
+- Comes with webpack as a module bundler.
+- A minimal and a flexible framework.
+- Bundles with existing components.
+- Scalable and easy to use.
+- Crafted with love.  
+
 ### Start
 
     $ npm run serve
