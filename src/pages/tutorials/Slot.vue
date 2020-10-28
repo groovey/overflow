@@ -3,7 +3,7 @@
     <Nav />
     <Slot>
       <template v-slot:header>{{ header }} </template>
-      <template v-slot:footer>Copyright by Cards</template>
+      <template v-slot:footer>Copyright by Overflow</template>
       {{ content }}
     </Slot>
   </div>

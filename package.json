@@ -1,7 +1,7 @@
 {
-  "name": "cards",
+  "name": "overflow",
   "version": "1.0.0",
-  "description": "A vue card tailwind framework",
+  "description": "A vue tailwind framework",
   "author": "Harold Kim Cantil",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -14,12 +14,12 @@
     "animate.css": "^4.1.1",
     "axios": "^0.20.0",
     "chalk": "^4.1.0",
-    "commander": "^6.1.0",
+    "commander": "^6.2.0",
     "core-js": "^3.6.5",
     "download-git-repo": "^3.0.2",
     "inquirer": "^7.3.3",
     "vue": "^3.0.2",
-    "vue-router": "^4.0.0-beta.13"
+    "vue-router": "^4.0.0-rc.1"
   },
   "devDependencies": {
     "@vue/cli": "^4.5.8",
@@ -28,30 +28,30 @@
     "@vue/cli-service": "^4.5.8",
     "@vue/compiler-sfc": "^3.0.2",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.11.0",
+    "eslint": "^7.12.1",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.2",
     "eslint-plugin-vue": "^7.1.0",
-    "standard": "^15.0.0",
-    "tailwindcss": "^1.9.5",
+    "standard": "^15.0.1",
+    "tailwindcss": "^1.9.6",
     "vue-cli-plugin-tailwind": "~1.5.0"
   },
   "bin": {
-    "groovey/cards": "bin/cards",
-    "cards": "bin/cards"
+    "groovey/overflow": "bin/overflow",
+    "overflow": "bin/overflow"
   },
   "keywords": [
     "vue",
     "tailwind",
     "framework",
-    "cards"
+    "overflow"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:groovey/cards.git"
+    "url": "git@github.com:groovey/overflow.git"
   }
 }

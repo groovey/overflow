@@ -9,9 +9,9 @@ program.version('0.1.0')
 
 program
   .command('new <dest>')
-  .description('Create a new cards project.')
+  .description('Create a new overflow project.')
   .action((dest) => {
-    download('groovey/cards', dest, function (err) {
+    download('groovey/overflow', dest, function (err) {
       if (err) {
         console.log('Something went wrong: ' + chalk.red(err))
         process.exit()

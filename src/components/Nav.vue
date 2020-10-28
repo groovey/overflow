@@ -1,7 +1,7 @@
 <template>
   <nav class="flex flex-wrap items-center bg-primary p-1 shadow-md">
     <a href="#" class="p-2 inline-flex items-center">
-      <router-link to="/" class="text-xl text-white font-bold uppercase tracking-wide">Cards</router-link>
+      <router-link to="/" class="text-xl text-white font-bold uppercase tracking-wide">Overflow</router-link>
     </a>
     <button @click="toggle" class="text-white inline-flex mr-1 p-1 rounded ml-auto hover:text-secondary outline-none sm:hidden" data-target="#navigation">
       <svg class="h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
