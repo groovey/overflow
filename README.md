@@ -28,7 +28,7 @@ Overflow is responsive framework written with Vue and Tailwindcss to suite your 
 ### Sample output on what you can do with the framework
 
 <p align="left">
-    <img src="https://github.com/groovey/overflow/blob/main/sample.png" width="300">
+    <img src="https://raw.githubusercontent.com/groovey/cards/main/sample.png" width="300">
 </p>
  
 ### License
