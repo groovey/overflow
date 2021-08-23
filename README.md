@@ -13,6 +13,10 @@ Overflow is responsive framework written with Vue and Tailwindcss to suite your 
 - Scalable and easy to use.
 - Crafted with love.  
 
+### Installation
+    
+    $ npm install
+
 ### Start
 
     $ npm run serve
